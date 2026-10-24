@@ -23,3 +23,6 @@ if [ -n "${CLAUDE_ENV_FILE:-}" ]; then
   echo "export VIRTUAL_ENV=\"$PWD/$VENV_DIR\"" >> "$CLAUDE_ENV_FILE"
   echo "export PATH=\"$PWD/$VENV_DIR/bin:\$PATH\"" >> "$CLAUDE_ENV_FILE"
 fi
+
+# Report wemake-python-styleguide violations without failing session start
+"$VENV_DIR/bin/python" -m flake8 app tests --select=WPS || echo "WPS: violations found, see above" >&2
