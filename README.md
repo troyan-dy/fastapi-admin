@@ -2,16 +2,17 @@
 
 ## Dependencies
 - docker-compose
-- python 3.9
+- python 3.14
 
 ## Commands
 ### Install
-- `make install`
+- `make setup`
 
 ### Run tests
 - `make test`
 ### Linting
 - `make lint`
+- `make wps` (wemake-python-styleguide: `flake8 app tests --select=WPS`)
 
 ### Formatting
 - `make format`
