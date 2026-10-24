@@ -1,0 +1,7 @@
+pytest==9.1.1
+pytest-asyncio==1.4.0
+async-asgi-testclient==1.4.11
+black==26.10.1
+isort==9.0.2
+flake8==7.4.1
+mypy==2.4.0
